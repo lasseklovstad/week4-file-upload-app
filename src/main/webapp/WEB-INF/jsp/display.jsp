@@ -15,8 +15,8 @@
 <body>
 
 
-<h1>Display</h1>
-
+<h1>Filename: ${name}</h1>
+<img src="/getfile" alt="car_image"/>
 
 </body>
 </html>

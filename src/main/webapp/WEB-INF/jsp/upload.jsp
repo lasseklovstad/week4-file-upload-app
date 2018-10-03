@@ -20,6 +20,8 @@
 	<button type="submit">View file</button>
 </form>
 
+<script type="text/javascript">console.log(file);</script>
+
 
 
 </body>
