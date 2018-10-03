@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import java.nio.file.Path;
 import java.util.stream.Stream;
 
+import java.io.IOException;
+
 @Service
 public class StorageService {
 
@@ -18,6 +20,17 @@ public class StorageService {
 
     void store(MultipartFile file){
     	this.file = file;
+    }
+
+
+    String getText(){
+    	try{
+    		return new String(file.getBytes());
+    	}
+    	catch(IOException e){
+    		return "Didn't work boss";
+    	}
+
     }
 
 /*
