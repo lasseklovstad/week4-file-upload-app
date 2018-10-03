@@ -1,0 +1,421 @@
+/********************************************************************
+	ZYPOP - HTTPS://ZYPOPWEBTEMPLATES.COM
+	FREE WEB TEMPLATES
+********************************************************************/
+
+
+/**
+This file contains the core CSS for this template, built on the Bootstrap framework 
+Set the variable values in _variables.scss 
+**/
+
+
+/** 
+Page structure and elements 
+**/
+.bg-primary {
+    background-color: $primary !important;
+}
+
+body {
+    margin-top: 35px;
+}
+body, section { 
+    background-color: $body-bg;	
+}
+
+
+section {
+	padding: $jumbotron-padding 0;
+}
+
+section.colored-bg {
+    background-color: darken($body-bg, 5%);
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+a, .page-link {
+    color: lighten($secondary, 5%);
+    font-weight: bold;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken($secondary, 5%);
+    }
+}
+
+fieldset { 
+    margin-bottom: $spacer; 
+    display: block;
+    border-top: 1px solid lighten($body-color, 20%);
+}
+fieldset legend { 
+    width: auto;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+table th { 
+    background-color: $secondary;
+    color: $white;
+	border-color:lighten($secondary, 5%) !important;
+	border-bottom: 1px solid lighten($secondary, 5%);
+}
+blockquote {
+    display: block;
+    border-left: 5px solid lighten($body-color, 20%);
+    padding: 0.5rem;
+	color: $body-color;
+    font-style: italic;
+    margin-bottom: $spacer;
+
+}
+.btn { 
+    font-weight: bold;
+}
+.btn-secondary, .badge-secondary {
+    color: $white;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    color: lighten($body-color, 5%);
+    font-weight: bold;
+}
+
+h3 { 
+    color: $secondary;
+}
+
+
+/** 
+Header + Navbar 
+**/
+.navbar-toggler {
+	margin: 0.5rem;
+}
+.navbar {
+	padding: 0 1rem;
+    background-color: $secondary;
+}
+.navbar-dark .navbar-brand {
+  	color: $white;
+    text-transform: uppercase;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+.navbar-dark .navbar-brand span {
+    color: lighten($secondary, 30%);
+}
+.navbar .nav-link.active {
+    background-color: darken($secondary, 5%);
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-nav .dropdown-item
+ {
+     color: lighten($body-color, 50%);
+     font-weight: bold;
+     padding: 1rem 1rem !important;
+     font-size: 0.8rem;
+     &:hover,
+     &:focus,
+     &:active {
+         text-decoration: underline;
+    }
+}
+
+
+
+
+/** 
+Jumbotrons / Sliders / Cards
+**/
+.jumbotron-narrow { 
+    padding: $jumbotron-padding / 2;
+}
+.jumbotron-very-narrow { 
+    padding: $jumbotron-padding / 4;
+}
+.jumbotron-wrap {
+    color: $gray-100;
+    background-color: darken($secondary, 5%);
+    background: linear-gradient(to bottom, $primary 0%, lighten($primary, 10%) 100%); 
+    box-shadow: 0 5px 10px darken($content-bg-color, 20%);
+    margin-bottom: 1rem;
+}
+.jumbotron-wrap-image {
+    background-image: linear-gradient(to bottom, rgba($primary, 1) 0%, lighten(rgba($primary, 0.8), 10%) 75%), url(../images/bg1.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-wrap.no-margin-bottom {
+    margin-bottom: 0;
+}
+.jumbotron-wrap .jumbotron { 
+    background: transparent;
+    margin-bottom: 0; 
+}
+.jumbotron-wrap .jumbotron .btn-secondary {
+}
+.jumbotron-wrap h1, .jumbotron-wrap .h1 {
+    color: $gray-100;
+    font-size: 2em;
+    text-shadow: 2px 2px 1px darken($primary, 15%);
+}
+.colored-bg-container h1, .colored-bg-container .h1 {
+    text-shadow: 2px 2px 1px darken($secondary, 35%);
+}
+.jumbotron .lead {
+    font-size: 1.2rem;
+}
+.jumbotron-wrap h2, .jumbotron-wrap .h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $white;
+}
+.card-container {
+    padding: 2rem 0;
+}
+.colored-bg-container {
+    background-color: $secondary;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba($secondary, 1) 0%, darken(rgba($secondary, 0.95), 10%) 50%), url(../images/bg1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gray-bg-container {
+    background-color: $content-bg-color;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, lighten(rgba($content-bg-color, 0.95), 50%) 0%, lighten(rgba($content-bg-color, 0.95), 75%) 50%), url(../images/bg1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $gray-800;
+}
+.gray-bg-container h2, .gray-bg-container .h2 {
+    color: $gray-900;
+}
+.card {
+    margin-bottom: $spacer;
+}
+.card blockquote.card-text {
+    font-size: 1.1em;
+    
+}
+.card-img-top {
+    opacity: 0.7;
+    height: auto;
+}
+.card {
+    background-color: darken($body-bg, 10%);
+    box-shadow: 0px 0px 10px darken($body-bg, 10%);
+}
+.padded-box {
+    padding: $jumbotron-padding  0;
+}
+
+
+
+/**
+Footer
+**/
+footer { 
+	background-color: $primary;
+    color: lighten($primary, 40%);
+	font-size: 0.9rem;
+
+}
+.footer-lists {
+	background-color: lighten($primary, 5%);
+	padding: $jumbotron-padding 0;
+	margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    color: lighten($primary, 20%);
+}
+
+.footer-bottom  a {
+    color: lighten($primary, 30%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 40%);
+    }
+}
+
+.footer-lists h4 {
+    color: lighten($primary, 70%);
+}
+
+.social-icons  a {
+    margin-right: 15px;
+}
+.footer-lists ul {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-lists ul li {
+	padding: 0.1rem 0;
+}
+footer p {
+	margin: 0;
+	padding-bottom: 1rem;
+}
+
+footer  a {
+    color: lighten($primary, 40%);
+    font-weight: normal;
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 60%);
+    }
+}
+
+
+
+
+/** 
+Articles
+**/
+article {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid $content-bg-color;
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+article h2.article-title {
+	font-size: 3rem;
+	margin-bottom: 0;
+	letter-spacing: -2px;
+}
+
+article p.article-meta {
+	color: darken($body-color, 5%);
+	font-size: 1rem;
+}
+
+article p.article-meta a {
+	color: darken($body-color, 5%);
+    text-decoration: underline;
+}
+
+/**
+Sidebar
+**/
+.sidebar-box {
+	margin-bottom: 2rem; 
+}
+.sidebar-box-bg {
+	padding: 1rem;
+	background-color: $content-bg-color;
+	border-radius: $border-radius;
+}
+
+
+
+
+/***
+Better nesting of list groups
+***/
+.list-group-item { 
+    border: none !important; 
+}
+
+.list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 2;
+}
+
+.list-group .list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 3;
+}
+
+.list-group .list-group .list-group .list-group .list-group-item {
+	padding-left: $list-group-item-padding-x * 4;
+}
+
+.list-group > .list-group .list-group-item:first-child,
+.list-group > .list-group .list-group-item:last-child {
+	border-radius: 0 !important;
+}
+.list-group > .list-group .list-group-item:last-child {
+	border-bottom: none !important;
+}
+.list-group-item:first-child { 
+    border-radius: 0;
+}
+
+.list-group-root { 
+    background-color: $content-bg-color; 
+    padding: 1rem;
+    border-radius: $border-radius;
+}
+.list-group-item {
+    background-color: $content-bg-color; 
+
+}
+
+.list-group-item.active, .list-group > .list-group .list-group-item.active:first-child,
+.list-group > .list-group .list-group-item.active:last-child {
+    border-radius: $border-radius !important;
+}
+
+/** 
+Responsive typography
+https://getbootstrap.com/docs/4.0/content/typography/#responsive-typography
+**/
+html {
+    font-size: 14px;
+}
+@include media-breakpoint-up(xs) {
+    html {
+        font-size: 10px;
+    }
+}
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 12px;
+    }
+    .card { margin-bottom: 0;}
+}
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 14px;
+    }
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-nav .dropdown-item  {
+        padding: 1rem 2rem !important;
+    }
+    body {
+        margin-top: 51px;
+    }
+    .jumbotron-wrap h1, .jumbotron-wrap .h1 {
+        font-size: 3rem;
+    }
+    .jumbotron .lead {
+        font-size: 1.3rem;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-nav .dropdown-item  {
+        font-size: 1.0em;
+    }
+    body {
+        margin-top: 58px;
+    }
+}

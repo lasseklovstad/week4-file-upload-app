@@ -1,0 +1,86 @@
+/********************************************************************
+	ZYPOP - HTTPS://ZYPOPWEBTEMPLATES.COM
+	FREE WEB TEMPLATES
+********************************************************************/
+
+
+/**
+This file contains the CSS variables for this template, built on the Bootstrap framework 
+See https://getbootstrap.com/docs/4.0/getting-started/introduction/ for more information
+**/
+
+
+/**
+Font properties
+**/
+$font-family-base: 'Ubuntu', Arial, 'sans-serif';
+$line-height-base: 2.2 !default;
+$font-weight-base: 400;
+
+/**
+Main colours
+**/
+$primary:       #000 !default;
+$secondary:     #427aa1 !default;
+$body-color:    #666 !default; 
+$body-bg:       #222;
+// Background color of sidebar boxes 
+$content-bg-color: lighten($body-bg, 5%);
+
+/**
+Change a few bootstrap defaults
+**/
+$component-active-bg: $secondary !default;
+$pagination-active-bg:  $secondary !default;
+$pagination-active-border-color: $secondary !default;
+$jumbotron-padding: 5rem;
+$card-border-width: 0;
+
+$table-border-color: $content-bg-color;
+
+$nav-tabs-border-color: lighten($primary, 15%);
+
+$pre-color: $body-color;
+
+$nav-tabs-bg-color: #000;
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-color:  lighten($body-color, 50%);
+$nav-tabs-link-active-bg:  $body-color;
+$nav-tabs-link-active-border-color: $body-color;
+$nav-link-disabled-color: darken($body-color, 10%);
+
+$component-active-bg: $secondary !default;
+$pagination-bg: $content-bg-color;
+$pagination-border-color: $content-bg-color;
+$pagination-active-bg:  $secondary !default;
+$pagination-active-border-color: $secondary !default;
+
+/**
+Carousel settings
+**/
+$carousel-control-width: 3% !default;
+$carousel-control-color: #fff !default;
+$carousel-control-opacity: 1;
+
+
+/**
+Set the max container widths
+**/
+$container-max-widths: (
+  sm: 740px,
+  md: 920px,
+  lg: 1060px,
+  xl: 1280px
+) !default;
+
+
+
+
+/** 
+Uncomment to remove all rounded corners
+or change rounded corners from Bootstrap default values
+**/
+
+$border-radius: 0px;
+$border-radius-lg: 0px;
+$border-radius-sm: 0px;
