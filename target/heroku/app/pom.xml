@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>week4-app</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>week4-app</name>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+ 
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.5.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+     
+<dependencies>
+
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+
+	
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+
+
+
+  <build>
+    <plugins>
+      <plugin>
+	<configuration>
+  		<appName>week4-app</appName>
+  		<processTypes>
+     		<web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.mycompany.app.App</web>
+  		</processTypes>
+	</configuration>
+        <groupId>com.heroku.sdk</groupId>
+         	<artifactId>heroku-maven-plugin</artifactId>
+        <version>2.0.6</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>
