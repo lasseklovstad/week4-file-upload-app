@@ -63,7 +63,7 @@ public class FileUploadController {
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
 */
 
-        return ResponseEntity.ok().body(storageService.getText());
+        return ResponseEntity.ok().body(storageService.getMetaData());
     }
 /*
 
