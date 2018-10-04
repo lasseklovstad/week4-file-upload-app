@@ -51,15 +51,12 @@ public class FileUploadController {
         return "display";
     }
 
-	@RequestMapping(value = "/getfile")
+	@RequestMapping(value = "/getfile",produces="application/pdf")
 	@ResponseBody
 	public byte[] getFileData()  {
 	MultipartFile file = storageService.getFile();
 	System.out.println(file.getOriginalFilename());
 	System.out.println(file.getContentType());
-	
-
-
 	return data;
 	
   	
